@@ -1,12 +1,55 @@
-# React + Vite
+# 🛠️ IT Support Ticketing System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack role-based IT support platform with user, support, and admin functionality — built with **React**, **Node.js**, **MongoDB**, and integrated with **Gemini API** (Google Generative AI) for intelligent ticket suggestions.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 👥 Role-Based Access
+- **User**: Create and view tickets with AI-suggested solutions.
+- **Support Staff**: Self-assign, track, and resolve tickets.
+- **Admin**: Register support users and monitor support performance.
+
+### 💡 Smart Ticket Suggestions
+- Uses **Gemini AI** to provide real-time suggestions for user-submitted issues.
+
+### 🔐 Authentication & Authorization
+- JWT-based login with secure HTTP-only cookies.
+- Role-based route protection on both backend and frontend.
+
+### 💻 Technologies
+- **Frontend**: React + Vite + Tailwind CSS
+- **Backend**: Node.js + Express + MongoDB Atlas
+- **AI Integration**: Google Gemini API
+
+---
+
+## 🌐 Live Demo
+
+- **Frontend**: [View Deployed Site](https://your-frontend-url.com)
+- **Backend API**: [Backend on Render](https://your-backend-url.com)
+---
+
+## 🧠 Gemini Integration
+
+The system sends ticket details to [Google’s Gemini API](https://ai.google.dev/) and receives intelligent suggestions that are shown in the user's ticket log.
+
+---
+
+## 📦 Folder Structure
+
+```bash
+📁 backend
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   ├── middleware/
+│   └── server.js
+📁 frontend
+│   ├── src/
+│   │   ├── pages/
+│   │   ├── context/
+│   │   ├── api/
+│   │   └── App.jsx
