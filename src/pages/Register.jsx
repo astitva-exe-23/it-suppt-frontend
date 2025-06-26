@@ -1,10 +1,13 @@
 import React, { useState, useContext } from 'react';
 import { registerUser } from '../api/api';
 import { AuthContext } from '../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
+
 
 export default function Register() {
   const [form, setForm] = useState({ name: '', email: '', password: '' });
   const [error, setError] = useState('');
+  const navigate = useNavigate();
   const { login } = useContext(AuthContext);
 
   const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value });
@@ -13,7 +16,7 @@ export default function Register() {
     e.preventDefault();
     try {
       const res = await registerUser(form);
-      login(res.data);
+     navigate('/login');
     } catch (err) {
       setError(err.response?.data?.message || 'Registration failed');
     }
