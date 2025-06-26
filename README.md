@@ -28,8 +28,8 @@ A full-stack role-based IT support platform with user, support, and admin functi
 
 ## 🌐 Live Demo
 
-- **Frontend**: [View Deployed Site](https://your-frontend-url.com)
-- **Backend API**: [Backend on Render](https://your-backend-url.com)
+- **Frontend**: [View Deployed Site](https://it-suppt-frontend.onrender.com/login)
+- **Backend API**: [Backend on Render]
 ---
 
 ## 🧠 Gemini Integration
